@@ -54,7 +54,7 @@ export default class Network extends Adapter {
     public async write(data: Uint8Array): Promise<void> {
         return new Promise<void>(resolve => {
             this.throwIfNeeded();
-            this.device.write(new Buffer(data), resolve);
+            this.device.write(new Buffer(data), () => resolve());
         });
     }
 
