@@ -1,58 +1,58 @@
 {
-  "version": "2.0.0",
-  "name": "escpos-print",
-  "bugs": {
-    "url": "https://github.com/haavardlian/escpos/issues"
-  },
-  "keywords": [
-    "esc/pos",
-    "escpos",
-    "typescript"
-  ],
-  "description": "Library for printing to ESC/POS compatible printers",
-  "homepage": "https://github.com/haavardlian/escpos",
-  "main": "src/index.js",
-  "typings": "src/",
-  "files": [
-    "src/"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/haavardlian/escpos.git"
-  },
-  "author": {
-    "name": "Håvard Lian",
-    "email": "haavard@64bit.no",
-    "url": "https://github.com/haavardlian"
-  },
-  "contributors": [],
-  "devDependencies": {
-    "@types/node": "13.1.8",
-    "@types/serialport": "8.0.0",
-    "@types/usb": "1.5.1",
-    "@types/pngjs": "3.4.0",
-    "@types/ws": "7.2.0",
-    "fs-extra": "8.1.0",
-    "ts-node": "8.6.2",
-    "tslint": "6.0.0",
-    "typescript": "3.7.5"
-  },
-  "dependencies": {
-    "iconv-lite": "0.5.1",
-    "pngjs": "3.4.0"
-  },
-  "optionalDependencies": {
-    "serialport": "8.0.6",
-    "usb": "1.6.2",
-    "ws": "7.2.1"
-  },
-  "scripts": {
-    "compile": "tsc",
-    "lint": "tslint -c tslint.json -p tsconfig.json",
-    "pack": "npm run compile && node scripts/createPackageDir.js",
-    "preversion": "node scripts/isMaster.js && npm run lint",
-    "version": "npm run pack",
-    "postversion": "git push && git push --tags"
-  }
+    "version": "2.0.0",
+    "name": "escpos-print",
+    "bugs": {
+        "url": "https://github.com/haavardlian/escpos/issues"
+    },
+    "keywords": [
+        "esc/pos",
+        "escpos",
+        "typescript"
+    ],
+    "description": "Library for printing to ESC/POS compatible printers",
+    "homepage": "https://github.com/haavardlian/escpos",
+    "main": "src/index.ts",
+    "typings": "src/",
+    "files": [
+        "src/"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/haavardlian/escpos.git"
+    },
+    "author": {
+        "name": "Håvard Lian",
+        "email": "haavard@64bit.no",
+        "url": "https://github.com/haavardlian"
+    },
+    "contributors": [],
+    "devDependencies": {
+        "@types/node": "13.1.8",
+        "@types/serialport": "8.0.0",
+        "@types/usb": "1.5.1",
+        "@types/pngjs": "3.4.0",
+        "@types/ws": "7.2.0",
+        "fs-extra": "8.1.0",
+        "ts-node": "8.6.2",
+        "tslint": "6.0.0",
+        "typescript": "3.7.5"
+    },
+    "dependencies": {
+        "iconv-lite": "0.5.1",
+        "pngjs": "3.4.0"
+    },
+    "optionalDependencies": {
+        "serialport": "8.0.6",
+        "usb": "1.6.2",
+        "ws": "7.2.1"
+    },
+    "scripts": {
+        "compile": "tsc",
+        "lint": "tslint -c tslint.json -p tsconfig.json",
+        "pack": "npm run compile && node scripts/createPackageDir.js",
+        "preversion": "node scripts/isMaster.js && npm run lint",
+        "version": "npm run pack",
+        "postversion": "git push && git push --tags"
+    }
 }
